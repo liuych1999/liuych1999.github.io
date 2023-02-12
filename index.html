@@ -1,0 +1,625 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta content="telephone=no" name="format-detection" />
+	    <meta content="email=no" name="format-detection" />
+	    <title>「我们的十年」“民之所想，政之所向”数据解码国务院常务会议的十年</title>
+		<script src="js/jquery-1.7.2.min.js" language="javascript"></script>
+		<script src="js/d3.min.js" language="javascript"></script>
+		<script src="js/jquery.color.js" language="javascript"></script>
+
+
+
+		
+
+	</head>
+	<style>
+		body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,li,ol,p,td,textarea,th,ul{margin:0;padding:0}
+		body{
+			font-size:16px; 
+			font-family: '微软雅黑','PingFang SC','Droidsansfallback';
+			color:#000;
+			background:#fff; 
+			background-image:url("images/dietu3.jpg");
+			backface-repeat:no-repeat;
+			overflow-x: hidden; }
+		.body-bg img{}
+		img{vertical-align:top;}
+		a img{border:none;}
+		a{color:#5d3a88;text-decoration:none;outline-style:none;}
+		var,em{font-style:normal}
+		ul,li{list-style:none}
+		.mobile-only{display: none}
+		.pc-only{display: block;}
+		.cover{width: 100%; height: 100%; position: relative; text-align: center; background-image: url("images/tou.png"); background-repeat: no-repeat; background-size:100%; background-color: #fff; color: #fff; font-size: 50px; line-height: 500px}
+		.cover-bg{position: absolute; z-index: -1; top:0; left:0; width: 1200px; height: auto;}
+		.cover-bg img{position: absolute; display: none;}
+		.content-div{padding-top: 10px; padding-bottom: 10px; position: relative; width: 100%; height: auto}
+		.content-wrap{width: 640px; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;}
+		.content-wrap p{padding-top: 15px; padding-bottom: 15px;color: #000;}
+		.content-wrap .subtitle span{font-weight: 900}
+		.content-wrap .subtitle{color:#000; font-size: 20px; text-align: center; }
+		.content-wrap .subtitle1 span{border-bottom: 2px #53cbc3 solid; padding-bottom: 4px; font-weight: 900}
+		.content-wrap .subtitle1{color:#000; font-size: 15px; text-align: center; }
+		.content-wrap .caption{color:#333; font-size: 12px; line-height: 20px; width: 70%; margin:0 auto;}
+		.content-wrap .caption1{color:#333; font-size: 12px; line-height: 20px;text-align: center; width: 70%; margin:0 auto;}
+		.chart-div{width: 990px; height: 500px; position: relative; margin: 0 auto; overflow: hidden; }
+        .chart-div1{width: 990px; height: 600px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-div2{width: 990px; height: 600px; position: relative; margin: 0 auto; overflow: hidden; background-image: url("images/tuwu.png"); background-repeat: no-repeat; background-size:100%,100%;}
+		.chart-div3{width: 960px; height: 540px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-div4{width: 990px; height: 500px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-div5{width: 990px; height: 700px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-div6{width: 990px; height: 600px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-div7{width: 990px; height: 600px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-div8{width: 990px; height: 600px; position: relative; margin: 0 auto; overflow: hidden; }
+		.chart-scroll-wrap{width: 990px; height: 500px; position: relative; margin: 0 auto; overflow-x: scroll; }
+		.chart-scroll-horizontal{width: 990px; height: 100%; position: relative; background-image: url(images/youpiao1.jpg); opacity: 1}
+        .chart-scroll-wrap .tip{position: absolute; z-index:1000; background-image: url(images/scroll-tip.png); width: 120px; height:80px; background-size: 100% auto; top:200px;}
+		.chart-scroll-wrap .tip .hand{animation:moveLeft 2s infinite linear; -webkit-animation:moveLeft 2s infinite linear; position: absolute;}
+		@keyframes moveLeft{
+				0%{right:-20px;}
+				70%{right:60px;}
+				100%{right:60px;}
+			}
+		@-webkit-keyframes moveLeft{
+				0%{right:-20px;}
+				70%{right:60px;}
+				100%{right:60px;}
+			}
+		
+		.credits{width: 100%; float: left; position: relative; text-align: center; font-size: 12px; line-height: 18px; padding-bottom: 40px; padding-top: 30px }
+		.credits p{width: 440px; margin: 0 auto; padding-bottom: 7px; font-weight: 400; color:#999;}
+		.credits p b{font-weight: 900}
+		.credits p.first{border-top: #999 1px solid; height: 30px; width: 640px}
+
+
+
+		
+		@media (max-width: 640px){
+			body{overflow-x: hidden;}
+			.mobile-only{display: block}
+			.pc-only{display:none;}
+			.cover{width: 100%; height: 30%; position: relative; text-align: center; background-image: url("images/tou.png"); background-repeat: no-repeat; background-size:100%; background-color: #fff; color: #fff; font-size: 50px; line-height: 500px}
+		    .cover-bg{position: absolute; z-index: -1; top:0; left:0; width: 1200px; height: auto;}
+		    .cover-bg img{position: absolute; display: none;}
+			.content-wrap{width: 90%; margin:0 auto; font-size: 16px; line-height: 28px; text-align: justify;overflow-x: hidden;}
+			.chart-div{width: 90%; height:40%;overflow-x: hidden; margin:0 auto;}
+			.chart-div2{width: 90%;height:29%;overflow-x: hidden; margin:0 auto;}
+			.chart-div1{width: 90%;height:60%;overflow-x: hidden; margin:0 auto;}
+			.chart-div3{width: 90%;height:29%;position: relative; margin: 0 auto; overflow: hidden;}
+			.chart-div4{width: 90%;overflow-x: hidden; margin:0 auto;}
+			.chart-div5{width: 100%;height:60%;overflow-x: hidden; margin:0 auto;}
+			.chart-div6{width: 90%;height:40%;overflow-x: hidden; margin:0 auto;}
+			.chart-div7{width: 90%;height:40%;overflow-x: hidden; margin:0 auto;}
+			.chart-div8{width: 90%;height:40%;overflow-x: hidden; margin:0 auto;}
+			.chart-scroll-wrap{width: 90%; margin:0 auto;}
+			.chart-scroll-wrap{ overflow-x: scroll; }
+			.credits p{width: 100%; font-size: 12px}
+			.credits p.first{width: 80%;padding-left: 10%}	
+
+			.chart-scroll-wrap .tip{position: absolute; z-index:1000; background-image: url(images/scroll-tip.png); width: 120px; height:80px; background-size: 100% auto; top:200px;}
+			.chart-scroll-wrap .tip .hand{animation:moveLeft 2s infinite linear; -webkit-animation:moveLeft 2s infinite linear; position: absolute;}
+			@keyframes moveLeft{
+				0%{right:-20px;}
+				70%{right:60px;}
+				100%{right:60px;}
+			}
+			@-webkit-keyframes moveLeft{
+				0%{right:-20px;}
+				70%{right:60px;}
+				100%{right:60px;}
+			}
+			
+		}
+
+      #scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: transparent;
+        padding: 1rem;
+        flex-direction: row-reverse;
+
+      }
+
+
+      article {
+        position: relative;
+        max-width: 20rem;
+        margin-left: 100px;
+      }
+
+      figure {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+
+      figure p {
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 17px;
+        line-height: 180%;
+        padding: 2em;
+        pointer-events: none;
+        box-shadow:0px 0px  8px 3px #bcbcbc;
+      }
+    
+      .invisible {
+        visibility: hidden;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #000000;
+      }
+
+    #mapchart {
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+}
+	</style>
+	<body>
+		
+	<!--头图部分-->	
+	<div class="cover">		
+
+	</div>
+		
+	<!--开头部分+视频-->	
+	<div class="credits">
+        <p class="first"></p>
+        <p><b>(网页加载可能需要时间，请耐心等待。建议通过谷歌浏览器浏览。若加载不成功，请退出重新进入，它在努力中～）</b></p>
+        <p>&nbsp;</p>
+	</div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p></p>
+			<p>邵飘萍曾在评论近代中国新闻界时说道，“我国现在之新闻界，其腐败幼稚、毋庸讳言，而根本问题，由于人才之缺乏，品类之不齐。”他认为“欲救其弊，知非提倡新闻学不可。”新闻教育是革除报业流弊的重要途径，新闻教育能使报纸更好地承担社会职责，对于一个健康的社会有着重要的意义。我们对1918年到1949年间近代中国开展的新闻教育情况进行了统计分析，与当时怀揣新闻教育理想的先驱们对话，试图从教育的角度去进一步了解近代中国的新闻史。</p>
+		</div>
+	</div>
+	
+	<!--第一部分-->	
+	<div class="content-div">
+	
+    <main> 
+    <section id="scrolly">
+        <figure style="height: 600px;top: 0px;">
+          <iframe aria-label="" frameborder="0" scrolling="no" src="https://flo.uri.sh/story/1822641/embed" style="width:100%;height:700px;">
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <title>散点</title>
+
+  <script>if ("ontouchstart" in window) { document.documentElement.classList.add("is-touch"); }</script>
+
+
+  <link rel="stylesheet" type="text/css" href="story_player.css">
+  <script src="story_player.js" charset="utf-8"></script>
+</head><body id="story" class="nav-style-tractor">
+    <style id="custom-nav-css" title="custom-css"></style>
+    <nav class="story-furniture ">
+      <div class="steppers no-select">
+        <button class="first" disabled></button>
+        <button class="previous" disabled></button>
+        <button class="play-pause small"></button>
+        <button class="next"></button>
+        <button class="last"></button>
+        <div class="count">
+          <span class="current"></span><span class="total"></span>
+        </div>
+        <button class="play-pause large"></button>
+      </div>
+      <div class="text"><p class="caption"></p></div>
+      <div class="progress"><span></span></div>
+    </nav>    <!-- translateZ(0) is a workaround fix for an old bug that resurfaced in Chromium v.89 that causes the contents of the inner iframe
+    in a story to become invisible it is scrolled out of view. See https://bugs.chromium.org/p/chromium/issues/detail?id=335442 -->
+  <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" scrolling="no" src="about:blank" style="transform: translateZ(0);"></iframe>
+</body>
+</html>
+          </iframe>
+        </figure>
+
+        <article>
+          <div class="step invisible"></div>
+          <div class="step">
+            <p>我们共搜集了1918年至1949年间79所开办新闻教育的院校，统计了这些院校的名称、开展新闻教育的院系、办学地点、开始办学年份等信息。一些院校的新闻教育延续至今，也有部分院校因为种种原因消失在了历史的长河中。无一例外的是，这79所院校都对近代乃至当代中国的新闻教育做出了不可磨灭的贡献。</p>
+          </div>
+          <div class="step invisible"></div>
+          <div class="step">
+            <p>近代中国的新闻教育起源于1918年。北京大学新闻学研究会的成立被视作中国新闻教育的发端，聚集徐宝璜、邵飘萍等众多耳熟能详的新闻大家。近代新闻教育办学风潮在1938达到了顶峰。这一年，全国抗日战争如火如荼进行，应军事报道、战时宣传等需要，有8所院校开办新闻院系。新闻教育的另一个高潮在1945年至1947年，解放战争催生了一大批新闻院系，三年间共有15所院校展开新闻教育。（有11所新闻院系开办时间不明，未作展示）</p>
+          </div>
+ 
+        </article>
+      </section>
+
+      <section>
+    </section>
+</main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="d3.min.js" tppabs="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="intersection-observer.js" tppabs="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="stickyfill.min.js" tppabs="http://historiascondatos.com/js/stickyfill.min.js"></script>
+    <script src="scrollama.min.js" tppabs="http://historiascondatos.com/js/scrollama.min.js"></script>
+
+    <script>
+
+      // using d3 for convenience
+      var main = d3.select("main");
+      var scrolly = main.select("#scrolly");
+      var figure = scrolly.select("figure");
+      var article = scrolly.select("article");
+      var step = article.selectAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // generic window resize listener event
+      function handleResize() {
+        // 1. update height of step elements
+        var stepH = Math.floor(window.innerHeight * 0.75);
+        step.style("height", 450 + "px");
+
+        var figureHeight = window.innerHeight / 2;
+        var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+        figure
+          .style("height", figureHeight + "px")
+          .style("top", 0 + "px");
+
+        // 3. tell scrollama to update new element dimensions
+        scroller.resize();
+      }
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        console.log(response);
+        // response = { element, direction, index }
+
+        // add color to current step only
+        step.classed("is-active", function(d, i) {
+          return i === response.index;
+        });
+
+        // update graphic based on step
+        figure.select("p").text(response.index + 1);
+    
+        var iframe = document.querySelector("#scrolly iframe");
+        iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
+      }
+
+      function setupStickyfill() {
+        d3.selectAll(".sticky").each(function() {
+          Stickyfill.add(this);
+        });
+      }
+
+      function init() {
+        setupStickyfill();
+
+        // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+        handleResize();
+
+        // 2. setup the scroller passing options
+        //    this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.1,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", handleResize);
+      }
+
+      // kick things off
+      init();
+    
+    </script>
+		</div>
+	<!--会议内容图-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div id="mapchart"></div>
+		<div class="content-div">
+		<div class="content-wrap">
+			
+		</div>
+	</div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p>从办学地点看，近代中国的新闻教育具有区域聚集性，华北、长三角以及粤港地区三个地区开办了绝大多数的新闻院系。其中，上海在近代中国拥有最多的新闻院系，共有29所院校开办于此，北京以13所的数量位居其后。通过散点图可以发现，新闻教育的区域性与近代中国各地区的政治经济发展状况高度重合。（有1所新闻院系办学地点不明，未作展示）</p>
+		</div>
+		<div class="content-wrap">
+			<p class="subtitle1"><span>企业相关词中，涉及最多的是“小微企业”</span></p>
+		</div>
+
+	</div>
+	<!--小微企业图-->
+    <div class="chart-div" >
+		<iframe src='https://flo.uri.sh/visualisation/11487378/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		
+		</div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p>一直以来，政府重点聚焦于市场主体中的“小微企业”。“企业贷款”、“企业融资”是政府围绕企业讨论最多的议题；<span class="highlight">“减轻企业负担”、“支持和鼓励企业”、“降低企业成本”</span>是政府解决企业发展问题的惯常举措。</p>
+			<p>据此，可以抽象出一次常务会议围绕“企业”的可能议题：“针对市场主体中的各类企业特别是中小企业，通过解决企业贷款、企业融资等问题，支持和鼓励企业创新工作，减轻企业负担，降低企业成本。”</p>
+			<p>十八大以来，国家聚焦企业经济发展，设立一批各具特色的试点性经济新区、自贸港。如“千年大计”雄安新区，唯一的中国特色自由贸易港——海南自贸港。十年间，随着新区和自贸港建设拔地而起，“春天的故事”续写新的篇章。</p>
+		</div>
+	</div>
+
+		<div class="chart-div7">
+			<iframe src='https://flo.uri.sh/visualisation/11824666/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		</div>
+	<div class="content-wrap">
+			<p class="caption1">海南自贸港十年前后对比</p>
+		</div>
+		<div class="chart-div8">
+			<iframe src='https://flo.uri.sh/visualisation/11824865/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		</div>
+	<div class="content-wrap">
+			<p class="caption1">雄安新区高铁站十年前后对比</p>
+		</div>
+		<div class="content-wrap">
+			<p><span class="highlight">企业的“冷暖”关乎经济和民生。</span>今年最新一次国常会中提到“稳增长稳就业保民生，关键要保市场主体”。由此也不难理解为何企业一直是政府关注的焦点。</p>
+			<p></p>
+		</div>
+	</div>
+		
+	<!--第二部分-->				
+	<div class="content-div">
+		<div class="content-wrap">
+			<p class="subtitle"><span>02</span></p>
+			<p class="subtitle"><span>
+				「支持、改革、创新」——服务型政府建设在路上</span></p>
+		</div>
+		<div class="content-wrap">
+			<p>政府职能转变是深化行政体制改革的核心，也是发展市场经济、法治经济的保障。“建设服务型政府”成为十八大以来政府建设的重点目标。</p>
+			<p>在381篇新闻通稿中，<span class="highlight">“支持”类举措在政府政策中提及最多。</span>紧随其后的是“改革”“创新”“完善”，而“监管”则位列第五位。这正显现出，10年来，“服务型政府”建设的成果显著。</p>
+			<p></p>
+		</div>
+		<div class="content-wrap">
+			<p class="subtitle1"><span>“支持”“改革”“创新”是政府最常实施的举措</span></p>
+		</div>
+	</div>
+	<!--词云图-->	
+	<div class="chart-div" >
+		<iframe src='https://flo.uri.sh/visualisation/11472968/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		</div>		
+	<div class="content-div">
+		<div class="content-wrap">			
+			<p>“支持”一词共被提及<span class="highlight">1029次</span>。从“企业”“地方政府”到“农民工”“高校”，政府支持的主体不断扩大。支持性惠民政策也一直在寻着人民群众的脚步前进。疫情发生时，针对相对特殊的“农民工”群体，政府政策从疫情前的“支持农民工返乡就业创业”迅速转变到“支持农民工就近就地就业”。</p>
+			<p>与“改革”相关度较高的议题，涉及“结构性改革”“制度改革”“市场化改革”以及围绕<span class="highlight">个人所得税</span>所开展的“税制改革”等。从宏观层面具象到微观个体，政府的每项改革无不关乎人民的切身利益。</p>
+		</div>
+		<div class="content-wrap">
+			<p class="subtitle1"><span>与政府举措相关的TOP5议题</span></p>
+		</div>
+	</div>
+	<!--树状图-->		
+	<div class="chart-div5";>
+		<iframe src='https://flo.uri.sh/visualisation/11481388/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		</div>
+	<div class="content-wrap">
+			<p class="caption">注：<span class="highlight">交互说明</span>：首先可点击关键词“创新”等，查看与“创新”相关议题的完整呈现。如需返回上一级，可点击右上角<span class="highlight">箭头</span>或点击空白处</p>
+		</div>
+	<div class="content-div">
+		<div class="content-wrap">			
+			<p>“服务型政府”必定是与时俱进的。在381篇稿件中，“创新”被提及699次。与“创新”相关度最高的议题是“创新创业”。2014年9月，“大众创业，万众创新”的目标在夏季达沃斯论坛上被提出，此后“双创”一度成为2018年年度经济类十大流行语。在双创背景下，围绕“新”字的“新业态”“新动能”“新模式”等在国常会的新闻通稿中也多次出现。</p>
+		</div>
+		<div class="content-wrap">
+			<p class="subtitle1"><span>381篇通稿正文中，与“新”相关度最高的是业态</span></p>
+		</div>
+	</div>
+	<!--“新”图-->	
+    <div class="chart-div2";>
+		
+		</div>
+	<div class="content-div">
+			<div class="content-wrap">			
+			<p>党的十九大报告提出要转变政府职能，深化简政放权，创新监管方式，进而建设<span class="highlight">为人民满意</span>的“服务型政府”。为了这一目标，国常会的讨论内容中始终与民生密切相关。</p>
+		</div>
+	</div>	
+	
+		
+	<!--第三部分-->	
+	<div class="content-div">
+		<div class="content-wrap">
+			<p class="subtitle"><span>03</span></p>
+			<p class="subtitle"><span>「就业、医疗、教育」是政府关注最多的民生领域</span></p>
+		</div>
+	</div>
+	<div class="content-div">
+			<div class="content-wrap">			
+			<p>在国常会的新闻通稿中，不仅仅聚焦于经济发展、企业活力，还<span class="highlight">写满了百姓民生。</span>其中，提及最多的便是“就业”、“医疗”和“教育”。 </p>
+			<p>“就业”共被提及743次，与之相关度较高的字是“稳”“保”“促”。2018年7月，国家提出“六稳”方针，“稳就业”成为首要工作。依托“六稳”政策，2020年4月，中央进一步提出“六保”新任务，<span class="highlight">“保居民就业”仍是首要任务。</span></p>
+		</div>
+		    <div class="content-wrap">
+			<p class="subtitle1"><span>就业议题与“稳”“保”“促”有着较高相关度</span></p>
+		</div>
+	</div>
+	<!--稳保促图-->	
+	<div class="chart-div1" >
+		<iframe src='https://flo.uri.sh/visualisation/11482242/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		</div>
+	<div class="content-wrap">
+			<p class="caption">注：<span class="highlight">交互说明</span>：首先可点击“稳”“保”“促”等关键词或矩形边框，查看与之相关议题的完整呈现。如需返回上一级，可点击右上角<span class="highlight">箭头</span>或点击空白处</p>
+		</div>
+	<div class="content-div">
+			<div class="content-wrap">			
+			<p>受疫情影响，<span class="highlight">“六保”“六稳”成为2020年及疫情防控常态化之后国务院的工作主线。</span>“保”字出现409次，位列当年度第一，比2019年增加103次。“稳”字出现133次，比上一年度增加29次。</p>
+			<p>高校毕业生和农民工的就业问题受到重点关注，为此政府提出<span class="highlight">扩大硕士研究生招生规模</span>，增加基层医疗、社区服务等岗位招募数量，加大对创业的支持力度，助推农民工就地就业等系列支持政策。</p>
+		</div>
+		    <div class="content-wrap">
+			<p class="subtitle1"><span>与民生三大主题“就业”“医疗”“教育”最相关议题</span></p>
+		</div>
+	</div>
+	<!--矩形树图-->	
+	<div class="chart-div1" >
+		<iframe src='https://flo.uri.sh/visualisation/11487252/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+		</div>	
+	<div class="content-wrap">
+			<p class="caption">注：<span class="highlight">交互说明</span>：首先可点击“就业”等关键词，查看与之相关议题的完整呈现。如需返回上一级，可点击右上角<span class="highlight">箭头</span>或图中空白处</p>
+		</div>
+	<div class="content-div">
+			<div class="content-wrap">			
+			<p>医疗一词共被提及345次。2013年“两会”后，新一届政府首次会议便提出要做好整合城镇职工基本医疗保险、城镇居民基本医疗保险、新型农村合作医疗的工作。<span class="highlight">“远程医疗”“基层医疗”“残疾人医疗”及提升“医疗服务”</span>是围绕医疗最常被提及的话题。</p>
+			<p>“教育”共计出现268次。与此相关度最高的是“义务教育”“职业教育”和“教育公平”议题。“国家智慧教育平台总浏览量达到40亿次，总访客量超过6亿人。”今年9月9日，教育部部长怀进鹏在中宣部新闻发布会上，用最新数据描绘出我国在教育信息化方面取得的积极进展。<span class="highlight">“办好人民满意的教育”，</span>政府一直在路上。</p>
+				<p></p>
+		</div>
+	</div>	
+		
+	<!--可以做一个邮票通览图-完成-->
+	<div class="chart-scroll-wrap">
+		<div class="chart-scroll-horizontal"><img src="images/youpiao1.jpg"></div>
+		<div class="mobile-only tip">
+			<div class="hand"><img src="images/hand.png" width="60"></div>
+		</div>
+		<div class="pc-only tip">
+			<div class="hand"><img src="images/hand.png" width="60"></div>
+		</div>
+	</div>
+	<!--邮票通览图注释-->
+	<div class="content-wrap">
+			<p class="caption">十八大以来至二十大召开，国家邮政局10年来发行邮票中的中国故事</p>
+		</div>
+		
+	<div class="content-div">
+		<div class="content-wrap">
+			<p>生态建设关乎民生福祉，始终是党和政府关注的重点。“绿水青山就是金山银山”。在河北省承德市塞罕坝机械林场考察期间，习近平总书记曾说：“全党全国人民要发扬塞罕坝精神，把绿色经济和生态文明发展好。”十年来，塞罕坝林场持之以恒地构筑着守卫京津的生态屏障。</p>
+		</div>
+	</div>
+
+	<!--结语部分-->	
+	<div class="content-div">
+		<div class="chart-div6";>
+		<iframe src='https://flo.uri.sh/visualisation/11824924/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
+			<div class="content-wrap">
+			<p class="caption1">塞罕坝十年前后对比</p>
+		</div>
+		</div>
+
+
+		<div class="content-wrap">
+			<p>2022年10月16日，中国共产党第二十次全国代表大会在首都北京胜利召开。习近平总书记在二十大报告中提出中国要坚持高质量发展，把发展经济的着力点放在实体经济上，在发展中保障和改善民生。</p>
+			<p>面向未来，<span class="highlight">为实现全面建成社会主义现代化强国、实现第二个百年奋斗目标，以中国式现代化全面推进中华民族伟大复兴的中心任务，</span>党和国家始终在路上。</p>
+		</div>
+
+	</div>
+	
+	<div class="credits">
+        <p class="first"></p>
+        <p><b>注：</b>本文选取国务院常务会议新闻通稿时间跨度</p>
+		<p>自2013年“两会”后新一届政府首次会议至2022年9月26日最新一次会议。</p>
+        <p>&nbsp;</p>
+		<p><b>参考内容：</b>中共二十大报告文字实录 http://www.news.cn/politics/cpc20/zb/2022zfwesdzb/kmh/wzsl.htm</p>
+        <p>&nbsp;</p>
+		<p><b>数据来源：</b>中国政府网</p>
+		<p>国家邮政局</p>
+		<p>&nbsp;</p>
+        <p><b>作者：</b>吴澳 刘史航 柳宇成 李竞竹 关旭增</p>
+		<p><b>联系我们：</b>18801285262@163.com</p>
+		<p>&nbsp;</p>
+		<p>本网页pc端和手机移动端均可浏览</p>
+        <p>@中国传媒大学</p>
+        <p>&nbsp;</p>
+      </div>  
+    </div> 
+
+	<script src="js/echarts.js"></script>
+  <script src="js/china.js"></script>
+  <script src="js/map.js"></script>
+
+</body>
+<script type="text/javascript">
+	var isMobile = $(window).width()>640?false:true;
+	var maxWIDTH = isMobile? $(window).width():990
+	var maxHEIGHT = $(window).height()
+	
+	var WIDTH = maxWIDTH
+	var HEIGHT = maxHEIGHT
+	var highlightFlag = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	$(document).scroll(function(){			
+		   
+			var top = $(document).scrollTop()
+			if(top>$(window).height()+100){
+				
+			}
+			
+			/* 高亮说明文字 */
+			for(var i=0; i<highlightFlag.length; i++){
+				var highlight = $(document).find(".highlight").eq(i).offset().top
+				if(top>highlight-$(window).height()*0.5){				
+					if(highlightFlag[i]==0){
+						$(document).find(".highlight").eq(i).animate({backgroundColor:'#e7fbb9'},1000)
+						highlightFlag[i]=1;
+					}
+				} 
+			}
+
+			
+
+	})
+
+	$(document).ready(function(){
+		if(isMobile) {
+			$(".chart-scroll-wrap").find(".tip").css("left",WIDTH*0.3)
+			$(".chart-scroll-wrap").bind("touchstart",function(){
+				$(this).find(".tip").fadeOut(500)
+			})
+		}
+	})
+
+
+	
+
+
+</script>
+
+
+
+</html>
